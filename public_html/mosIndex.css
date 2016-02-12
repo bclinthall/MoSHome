@@ -13,6 +13,12 @@ body{
     background-attachment: fixed;
         
 }
+a:link{
+    color: #339900;
+}
+a:visited{
+    color: #336600;
+}
 .content{
     width: 75%;
     max-width: 700px;

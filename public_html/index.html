@@ -92,9 +92,43 @@ and open the template in the editor.
                     trajectory and use the "pause" feature).  Some fun(?) physics stats are listed.
                 </p>
             </div>
-                
+            <div class="section">
+                <h2><a href="http://www.themusicofthespheres.com/FOL">Propositional Logic</a></h2>
+                <p>
+                    Did you take a logic class in college?  I've taught logic and used it
+                    in other classes I've taught as well.  This is a program I made for 
+                    helping students practice propositional logic (the kind that deals with
+                    <code>not</code>, <code>and</code>, <code>or</code>, and <code>if... then...</code>).
+                    Choose a level then click <code>Help</code> in the top right corner
+                    to get the sense of it.  If you try to actually use it, you'll 
+                    see a box on the right side that will give you instructions 
+                    on using the program as you go.  Keep your eye on that box.
+                    There are a few bugs. It has a back end setup with php and sql
+                    that allowed students to submit proofs to me for grading, but it 
+                    isn't set up on its current server.
+                </p>
+            </div>
+
+
         </div>
-
-
     </body>
 </html>
+
+<!--
+function doCase(line){
+
+}
+
+function processCaseLine(line){
+    doCase(line);
+}
+function processData(input) {
+    var lines = input.split("\n");
+    var numberOfCases = parseInt(lines[0]);
+    var lineOfFirstCase = 1;
+    for(var i=lineOfFirstCase; i<numberOfCases+lineOfFirstCase; i++){
+        processCaseLine(lines[i]);
+    }
+} 
+
+-->

@@ -39,3 +39,7 @@ h1{
 .indent{
     padding-left:20px;
 }
+iframe{
+    display: block;
+    margin: auto;
+}

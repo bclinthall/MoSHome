@@ -19,7 +19,7 @@ a:link{
 a:visited{
     color: #336600;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 530px) {
     .content{
         width: 75%;
         max-width: 700px;
@@ -27,10 +27,10 @@ a:visited{
         margin-right: auto;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 530px) {
     .content{
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: -20px;
+        margin-right: -20px;
     }
 }
 h1{

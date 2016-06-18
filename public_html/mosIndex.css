@@ -29,8 +29,8 @@ a:visited{
 }
 @media screen and (max-width: 480px) {
     .content{
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 h1{

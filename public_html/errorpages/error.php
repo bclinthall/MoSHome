@@ -25,9 +25,9 @@ if ($title == false || strlen($status) != 3) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' type="text/css" href="/MOSindex/mosIndex.css">
     </head>
-    <body class = "content">
-        <div class="section">
-            <h1><?php echo $title?></h1>
+    <body class = "mos_content">
+        <h1><?php echo $title?></h1>
+        <div class="mos_section">
             <p><?php echo $message?></p>
         </div>
     </body>

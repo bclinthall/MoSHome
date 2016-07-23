@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Copyright B. Clint Hall 2016 all rights reserved
 -->
 <html>
     <head>
         <title>The Music of the Spheres</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='stylesheet' type="text/css" href="/MOSindex/mosIndex.css">
+        <link rel='stylesheet' type="text/css" href="/MoSindex/mosIndex.css">
         <link rel="icon" type="image/png" href="/favicon.png" />
 
     </head>
     <body>
-        <h1>Welcome to themusicofthespheres.com</h1>
+        <h1>Welcome to The Music of The Spheres</h1>
                 
         <div class="mos_content">
             <div class='mos_section'>
@@ -26,7 +24,7 @@ and open the template in the editor.
                 
             </div>
             <div class='mos_section'>
-                <h2>MusicSheet and WebAudioGui</h2>
+                <h2>MusicSheet and WebAudioGUI</h2>
                 <p>These two are integrated into one, but if you are only interested in one or 
                     the other, there's no need to dive into both.  This really works best in Google's <a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome browser</a>, though most of it 
                     works in <a href="www.mozilla.org/firefox-download">Firefox</a> too.</p>
@@ -37,10 +35,10 @@ and open the template in the editor.
                         get the hang of. To get started, just navigate to the 
                         <a href='/MusicSheet'>app</a>, and 
                         select "MusicSheet Tutorial" from the menu you'll find in 
-                        the gear icon at the top left.</p>
+                        the gear icon at the top right.</p>
                     <p>If you sing in a choir, this is great for 
                         letting you hear just your part of a section of music, 
-                        or just your part with the other parts quiter. If you 
+                        or just your part with the other parts quieter. If you 
                         are a choir director, you can enter a piece of music and 
                         then export what you've done and email it your members 
                         to import for themselves (copyright permitting, of course).
@@ -48,7 +46,7 @@ and open the template in the editor.
                 <h3><a href='/WebAudioGUI'>WebAudioGUI</a></h3>
                 <div class='indent'>
                     <p>As the name suggests, the intention here is to make a graphical
-                        user interface for the Web Audio API.  You get flowchart-style graphical audio
+                        user interface for the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a>.  You get flowchart-style graphical audio
                         nodes. You can drag and drop connections among them and adjust their 
                         parameters in a flexible way.  
                         The tutorial here is stored as a series of instruments.
@@ -84,10 +82,22 @@ and open the template in the editor.
                 <h2><a href="/fretboardpractice">Fretboard Practice</a></h2>
                 <p>
                     Helps you learn the notes on a guitar fretboard.  Select which fretboard positions
-                    to practice and whether to quiz with ask and respond with note names, staff,
-                    or a fret chart.  There is even an option to answer by using your
-                    device's microphone and playing the note on a real guitar.  Mobile friendly.
-                </p>
+                    to practice. There are lots of options for how to quiz yourself.  </p>
+                <div>Choose what the quiz will show you:</div>
+                <ul>
+                    <li>a position on a fretboard graphic</li>
+                    <li>a note name</li>
+                    <li>a note on a musical staff</li>
+                </ul>
+                <div>Choose how you will respond:</div>
+                <ul>
+                    <li>click a position on a fretboard graphic</li>
+                    <li>type or click a note name</li>
+                    <li>click a note on a musical staff</li>
+                    <li>use the microphone on your computer and play a note on
+                        a real guitar.</li>
+                </ul>
+                <p>Mobile friendly.</p>
             </div>
             <div class="mos_section">
                 <h2><a href="/orbitgame">Orbit Game</a></h2>
@@ -124,22 +134,3 @@ and open the template in the editor.
         </div>
     </body>
 </html>
-
-<!--
-function doCase(line){
-
-}
-
-function processCaseLine(line){
-    doCase(line);
-}
-function processData(input) {
-    var lines = input.split("\n");
-    var numberOfCases = parseInt(lines[0]);
-    var lineOfFirstCase = 1;
-    for(var i=lineOfFirstCase; i<numberOfCases+lineOfFirstCase; i++){
-        processCaseLine(lines[i]);
-    }
-} 
-
--->

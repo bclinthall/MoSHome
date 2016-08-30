@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Flashcards</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.1.0.min.js"></script>
+	<script src="MethodsToKnow.js"></script>
+	<script>
+		var data = methods; //data should be set an array of arrays.  They inner arrays should each have length==2: first question, then answer.
+		function forward(){
+			
+			var a = $("#a");
+			if(!a.is(":visible")){
+				a.show();
+			}else if(placeInDeck==deck.length-1){
+				alert("End of deck");
+			} else {
+				placeInDeck++;
+				showQuestion();
+			}
+		}
+		function back(){
+			if(placeInDeck==0){
+				alert("start of deck");
+				return;
+			} 
+			var a = $("#a");
+			if(a.is(":visible")){
+				a.hide();
+			}else if(placeInDeck==0){
+				alert("start of deck");
+			} else{
+				placeInDeck--;
+				showQuestion();
+				a.show();
+			}
+
+		}
+		function showQuestion(){
+			$("#placeInDeck").text(placeInDeck+1);
+			$("#a").hide();
+			var card = data[deck[placeInDeck]];
+			$("#q").html(card[0]);
+			$("#a").html(card[1]);
+		}
+		function rand(max){
+			return Math.floor(Math.random()*max);
+		}
+		var placeInDeck = 0;
+		var deck;
+		function shuffle(){
+			deck = [];
+			placeInDeck = 0;
+			var indexes = [];
+			for(var i=0; i<data.length; i++){
+				indexes.push(i);
+			}
+			while (indexes.length>0){
+				deck.push(indexes.splice(rand(indexes.length-1),1)[0]);
+			}
+		}
+		$(function(){
+			shuffle();
+			showQuestion();
+		})
+	</script>
+	<style>
+		div{
+			padding: 10px;
+			margin: 5px;
+		}
+		#q{
+			border: 1px solid green;
+		}
+		#a{
+			border: 1px solid red;
+		}
+	</style>
+
+</head>
+<body>
+<div>
+	<button onClick="forward()">NEXT</button>
+	<button onClick="back()">BACK</button>
+	<button onClick="shuffle()">shuffle</button>
+	<span id="placeInDeck"></span>
+</div>
+<div id="q"></div>
+<div id="a"></div>
+</body>
+</html>

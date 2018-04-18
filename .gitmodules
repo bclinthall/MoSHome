@@ -1,0 +1,12 @@
+[submodule "MusicSheet"]
+	path = MusicSheet
+	url = https://github.com/bclinthall/MusicSheet.git
+[submodule "OrbitGame"]
+	path = OrbitGame
+	url = https://github.com/bclinthall/OrbitGame.git
+[submodule "FirstOrderLogic"]
+	path = FirstOrderLogic
+	url = https://github.com/bclinthall/FirstOrderLogic.git
+[submodule "FretboardPractice"]
+	path = FretboardPractice
+	url = https://github.com/bclinthall/FretboardPractice.git

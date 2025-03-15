@@ -1,7 +1,19 @@
 {
   "name": "the-music-of-the-spheres",
   "version": "1.0.0",
-  "scripts": { 
+  "scripts": {
     "start": "sirv ./src public --cors --single --no-clear --port 8000"
-  }
+  },
+  "description": "When you first clone a repo with submodules, it doesn't  download the submodule content automatically. You need to  initialize the config using `git submodule init` then call  `git submodule update`.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bclinthall/MoSHome.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bclinthall/MoSHome/issues"
+  },
+  "homepage": "https://github.com/bclinthall/MoSHome#readme"
 }
